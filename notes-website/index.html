@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+
+<div class="header"><h1>📚 Notes Hub</h1>this is for all std <br>add your note with link and title to help other and get from other</div>
+
+
+
+<div class="container">
+
+  <div class="create-box">
+    
+    <input type="text" id="title" placeholder="Enter note title">
+    <input type="text" id="link" placeholder="Paste note link">
+    <button onclick="addNote()">Add Note</button>
+    <input type="text" id="search" placeholder="🔍 Search notes..." onkeyup="searchNotes()">
+  </div>
+
+  <p id="emptyMsg">No notes yet 📭</p>
+  <ul id="notesList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+<button class="fab" onclick="addNote()">+</button>
+</body>
+</html>

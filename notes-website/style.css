@@ -1,0 +1,175 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  background: rgba(0,0,0,0.3);
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
+  li {
+    padding: 12px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Input Box */
+.create-box {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 85%;
+  padding: 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Button */
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #ff4e8a;
+  color: white;
+  cursor: pointer;
+}
+
+/* Notes List */
+#notesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+/* Empty Text */
+#emptyMsg {
+  text-align: center;
+  opacity: 0.7;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #ff4e8a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff2e6e;
+  transform: scale(1.05);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #ff4e8a;
+}
+li {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.create-box {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4e8a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+#search {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .create-box,
+.dark li {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark input {
+  background: #2a2a2a;
+  color: white;
+}
+.dark-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
